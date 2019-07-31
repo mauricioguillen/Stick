@@ -1,0 +1,6 @@
+Revision history for Perl extension Stick.
+
+0.01  Wed Jul 31 04:15:12 2019
+	- original version; created by h2xs 1.23 with options
+		-AX -n Stick
+
