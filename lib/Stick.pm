@@ -27,21 +27,41 @@ our @EXPORT = qw(
 
 our $VERSION = '0.01';
 
+sub new {
+
+
+
+
+}
+
+
+
 
 # Preloaded methods go here.
 
 1;
 __END__
-# Below is stub documentation for your module. You'd better edit it!
 
 =head1 NAME
 
-Stick - Perl extension for blah blah blah
+Stick - glue the return of a function to a variable.
 
 =head1 SYNOPSIS
 
   use Stick;
-  blah blah blah
+  use WWW::Mechanize;	
+
+  my $st = Stick->new();
+
+  $st->stick('var' => \my $response,'object' => \$m, 'func' => "get");
+
+  while($response->status > 200  ){
+
+  $m->get("https://www.google.com/");
+
+
+  }
+
 
 =head1 DESCRIPTION
 
